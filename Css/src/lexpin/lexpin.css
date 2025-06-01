@@ -1,0 +1,65 @@
+  *  {
+    margin: 0;
+    padding: 0;
+}
+/*Barra de navegacion*/
+nav {
+    background-color: #2929ca;
+    color: white;
+    font-size: 20px;
+    display: flex;
+    /*Eje principal*/
+    justify-content: space-between;
+    /*Eje secundario*/
+    align-items: center;
+    /*height: 80px */
+    /*Distancia entre el borde y las palabras*/
+    padding: 20px;
+    /* padding: 20px 0 20px 0 (arriba. derecha, abajo, izquierda) 
+    padding: 20px 0; 20 arriba y abajo, 0 derecha e izquierda
+    padding: 20 px 20 px en todas las direcciones
+    */
+    border-radius: 0 0 20px 20px;
+    /* 
+    Radio de los bordes, se lee arriba-izquierda, arriba-derecha, abajo-izq, abajo-der
+    */
+}
+
+/*
+Nav div selecciona todos los divs dentro de la seleccion nav
+nav > divs selecciona los hijos directo de nav, es decir las subramas
+*/
+nav div {
+    display: flex;
+    /*Espaciado entre los elementos de la fila o columna*/
+    gap: 20px;
+}
+/*
+  Las pseudoclases manejan el estado de un elemento
+  :hover se activa cuando el mouse pasa por encima del elemento
+  :active se activa cuando el elemento es presionado
+  :focus se activa cuando el elemento es seleccionado
+  :visited se activa cuando el elemento es visitado
+  :link se activa cuando el elemento es un link
+  :first-child se activa cuando el elemento es el primer hijo de su padre
+  :last-child se activa cuando el elemento es el último hijo de su padre
+*/
+nav div a:visited, nav div a:link {
+    color: white;
+    text-decoration: none;
+}
+
+.enlace:hover {
+    color: black;
+}
+/*
+#inicio:hover, #Introduccion:hover {
+    color: #2b0202;
+}
+*/
+/*
+nav div a {
+    margin: 0 20px;
+}
+/*
+
